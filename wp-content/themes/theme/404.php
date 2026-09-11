@@ -6,7 +6,7 @@
 
         <div class="section-title-row">
             <div class="section-title">
-                404 Error
+                404 Error 
             </div>
         </div>
 
