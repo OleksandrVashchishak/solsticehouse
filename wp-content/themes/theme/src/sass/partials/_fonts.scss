@@ -1,0 +1,21 @@
+@font-face {
+  font-family: $font-primary;
+  src: url("../../fonts/alan/AlanSans-Regular.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-primary;
+  src: url("../../fonts/alan/AlanSans-Light.ttf") format("truetype");
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}

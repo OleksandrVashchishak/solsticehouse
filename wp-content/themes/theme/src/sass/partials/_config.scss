@@ -1,0 +1,96 @@
+// =============================================================================
+// Colors
+// =============================================================================
+
+$color-white: #fff;
+$color-black: #000;
+$color-body-bg: #bbbbbb;
+$color-banner-bg: #1e1e1e;
+$color-hover: #b7b0a5;
+$color-hover-bg: #bcb8af;
+$color-accent: #4d9070;
+$color-icon: #000000;
+$color-icon-light: #e9e6de;
+$color-navy: #071d37;
+$color-navy-dark: #041426;
+$color-overlay: #0000003b;
+$color-overlay-light: #fff244; 
+
+// =============================================================================
+// Fonts
+// =============================================================================
+
+$font-primary: "Alan Sans";
+
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$line-height-base: 1;
+$line-height-tight: 90%;
+$line-height-solid: 100%;
+
+// =============================================================================
+// Font sizes
+// =============================================================================
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-base: 16px;
+$font-size-button: 19px;
+$font-size-lg: 20px;
+$font-size-menu-md: 21px;
+$font-size-menu: 23px;
+$font-size-xl: 24px;
+$font-size-title-sm: 29px;
+$font-size-2xl: 32px;
+$font-size-3xl: 36px;
+$font-size-title-md: 39.5px;
+$font-size-hero: 72px;
+
+// =============================================================================
+// Breakpoints
+// =============================================================================
+
+$breakpoint-desktop: 1400px;
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 650px;
+$breakpoint-small: 550px;
+
+$normal-desktop-breakpoint: 1440px;
+$small-desktop-breakpoint: 1290px;
+$small-desktop-breakpoint1150: 1150px;
+$small-desktop-breakpoint1024: 1023px;
+$mobile-menu: 1024px;
+$mobile-menu-breakpoint: 992px;
+$mobile-menu-breakpoint768: 767px;
+$mobile-menu-breakpoint668: 668px;
+$mobile-menu-breakpoint552: 552px;
+$mobile-menu-breakpoint400: 400px;
+
+// =============================================================================
+// Layout
+// =============================================================================
+
+$container-width: 1312px;
+$container-banner: 1440px;
+$container-padding: 16px;
+$offset-lg: 55px;
+$offset-md: 32px;
+$offset-sm: 16px;
+$button-height: 37px;
+$button-height-lg: 54px;
+
+// =============================================================================
+// Transitions / z-index
+// =============================================================================
+
+$transition: all .4s;
+$transition-slow: all .6s;
+$blur: 34px;
+
+$z-base: 1;
+$z-mid: 2;
+$z-popup: 3;

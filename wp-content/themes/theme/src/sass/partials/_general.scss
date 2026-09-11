@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  height: 100dvh;
+  background-color: $color-body-bg;
+}
+
+#page {
+  overflow: hidden;
+  position: relative;
+}

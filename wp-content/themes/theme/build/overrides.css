@@ -1,0 +1,168 @@
+/* thanks screen Figma 1-2505 */
+.popup__contact.thanks .popup__contact-close {
+  z-index: 5;
+  color: #000 !important;
+  right: 13px !important;
+  left: auto !important;
+  top: 13px !important;
+  bottom: auto !important;
+  transform: none !important;
+}
+.popup__contact.thanks .popup__contact-head,
+.popup__contact.thanks .popup__contact-team,
+.popup__contact.thanks .popup__contact-form-section,
+.popup__contact.thanks .popup__contact-inner {
+  visibility: hidden;
+}
+.popup__thanks {
+  position: absolute;
+  inset: 0;
+  background: #fff !important;
+  color: #000 !important;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 28px;
+  z-index: 1;
+}
+.popup__thanks.active {
+  display: flex;
+}
+.popup__thanks svg {
+  display: none !important;
+}
+.popup__thanks .title {
+  font-size: 42.971px !important;
+  font-weight: 400;
+  margin: 0 0 21px;
+  max-width: 440px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #000 !important;
+}
+.popup__thanks .text {
+  font-size: 18.8px !important;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.376px;
+  max-width: 373px;
+  margin: 0;
+  color: #000 !important;
+}
+
+/* menu close X — Figma 46:60 */
+.header__popup-close {
+  position: absolute !important;
+  right: 19px !important;
+  top: 9px !important;
+  width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  font-size: 0 !important;
+  text-transform: none !important;
+  color: transparent !important;
+  line-height: 0 !important;
+  overflow: clip !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.header__popup-close svg,
+.header__popup-close img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+@media screen and (max-width: 900px) {
+  .header__popup-close {
+    top: 16px !important;
+    right: 16px !important;
+  }
+}
+
+/* contact modal mobile spacing */
+@media screen and (max-width: 900px) {
+  .popup__contact {
+    padding: 12px !important;
+    align-items: flex-start !important;
+    overflow-y: auto !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .popup__contact-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 36px 12px 20px !important;
+  }
+  .popup__thanks {
+    padding: 36px 12px !important;
+  }
+  .popup__contact:not(.second) .popup__contact-head {
+    max-width: none !important;
+    margin: 0 0 20px !important;
+  }
+  .popup__contact:not(.second) .popup__contact-subtitle {
+    padding-left: 0 !important;
+  }
+  .popup__contact:not(.second) .popup__contact-team {
+    flex-direction: column !important;
+    gap: 16px !important;
+    margin: 0 0 28px !important;
+    max-width: none !important;
+  }
+  .popup__contact:not(.second) .popup__contact-photo {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  .popup__contact:not(.second) .popup__contact-form-section {
+    max-width: none !important;
+    margin-left: 0 !important;
+  }
+  .popup__contact:not(.second) .popup__contact-form .wpcf7-form {
+    gap: 16px !important;
+  }
+  .popup__contact:not(.second) .popup__contact-fields-row {
+    gap: 12px !important;
+  }
+  .popup__contact:not(.second) .popup__contact-field {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+  .popup__contact:not(.second) .popup__contact-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+  }
+  .popup__contact:not(.second) .popup__contact-consent {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+  .popup__contact:not(.second) .popup__contact-consent-copy {
+    width: auto !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+  .popup__contact:not(.second) .popup__contact-consent-main,
+  .popup__contact:not(.second) .privacy {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+  .popup__contact:not(.second) .popup__contact-submit {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  .popup__contact:not(.second) input[type="submit"] {
+    width: 100% !important;
+  }
+}

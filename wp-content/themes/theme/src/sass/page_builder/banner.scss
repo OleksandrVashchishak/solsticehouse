@@ -1,0 +1,100 @@
+.banner {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-slow;
+    opacity: 1;
+    z-index: $z-base;
+    background: $color-banner-bg;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.dn {
+        display: none;
+    }
+
+    &.need_video {
+        .banner__image {
+            display: none;
+        }
+    }
+
+    &__image,
+    &__video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: $container-banner;
+        padding: 0 $offset-lg;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            padding: 0 24px;
+        }
+
+        @media screen and (max-width: $breakpoint-small) {
+            padding: 0 10px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: $z-popup;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+    }
+
+    &__logo {
+        display: block;
+        width: min(441px, 100%);
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 28px;
+        font-size: $font-size-button;
+        font-weight: $font-weight-regular;
+        height: $button-height-lg;
+        background: $color-white;
+        color: $color-black;
+        transition: $transition;
+        opacity: 1;
+        text-transform: uppercase;
+
+        @media screen and (max-width: $breakpoint-small) {
+      
+        }
+
+        &:hover {
+            background: $color-hover-bg;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                background: $color-hover-bg;
+            }
+        }
+    }
+}

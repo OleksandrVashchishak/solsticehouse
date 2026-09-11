@@ -1,0 +1,16 @@
+@mixin dynamic-block($content, $w: 100%, $h: 100%) {
+    position: relative;
+    width: $w;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: $h;
+    }
+    #{$content} {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+} 

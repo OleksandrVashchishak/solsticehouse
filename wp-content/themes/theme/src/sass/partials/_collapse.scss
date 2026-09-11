@@ -1,0 +1,38 @@
+header.scrolled .collapse{
+  max-height: calc(100dvh - 64px);
+}
+
+.collapse {
+  @media screen and (max-width: $mobile-menu) {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    background: $color-navy-dark;
+    padding: 0 16px;
+    padding-top: 38px;
+    padding-bottom: 43px;
+    height: calc(100dvh - 117px);
+    top: 64px;
+    left: -100%;
+    width: 100%;
+    height: auto;
+
+    max-height: calc(100dvh - 96px);
+    overflow: auto;
+  }
+
+  &.in {
+    left: 0;
+  }
+}
+
+.collapsing {
+  position: relative;
+  // height: 0;
+  overflow: hidden;
+  transition-property: height, visibility;
+  // transition: .35s;
+  transition-timing-function: ease;
+}

@@ -1,0 +1,12 @@
+body {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  font-family: $font-primary;
+  line-height: $line-height-base;
+}
+
+button {
+  font-family: $font-primary;
+  cursor: pointer;
+  letter-spacing: normal;
+}

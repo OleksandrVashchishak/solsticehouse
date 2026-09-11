@@ -1,0 +1,5 @@
+[text* your-name placeholder "Name"]
+[email* your-email placeholder "Email"]
+[tel* your-phone placeholder "Phone Number"]
+<p class="agree">*By providing your email address, you agree to our privacy policy.</p>
+[submit "Send me pdf"]
