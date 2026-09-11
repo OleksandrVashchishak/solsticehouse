@@ -30,6 +30,11 @@
         }
 
         &.thanks {
+
+            .popup__contact-wrapper {
+                height: 309px;
+                overflow: hidden;
+            }
             .popup__contact-close {
                 z-index: $z-mid;
                 color: $color-black;
@@ -395,7 +400,7 @@
                         }
 
                         @media screen and (max-width: $breakpoint-mobile) {
-text-align:center;
+                            text-align: center;
                         }
                     }
 
@@ -424,7 +429,7 @@ text-align:center;
         @media screen and (max-width: $breakpoint-mobile) {
 
 
-     
+
 
             .popup__contact-inner {
                 flex-direction: column;
@@ -445,6 +450,7 @@ text-align:center;
                 }
 
                 .wpcf7-form {
+
                     .wpcf7-form-control-wrap,
                     input[type="text"],
                     input[type="email"],
@@ -570,7 +576,7 @@ text-align:center;
                     max-width: 382px;
                     flex: 0 0 382px;
 
-                    > p {
+                    >p {
                         display: contents;
                         margin: 0;
                     }
@@ -601,7 +607,7 @@ text-align:center;
                         cursor: pointer;
 
                         &:checked {
-                            background: $color-black;
+                            background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.1961 0.00045355C12.9931 0.00847123 12.8013 0.0956609 12.6617 0.243354L4.64601 8.50196L1.31828 5.39283C1.2434 5.32224 1.15532 5.26712 1.05909 5.23065C0.96286 5.19417 0.860376 5.17704 0.757514 5.18025C0.654652 5.18347 0.553437 5.20695 0.459671 5.24936C0.365905 5.29178 0.281434 5.35228 0.211102 5.42741C0.140769 5.50254 0.0859589 5.59081 0.049814 5.68717C0.0136692 5.78352 -0.00309899 5.88606 0.000470521 5.98891C0.00404004 6.09176 0.027877 6.1929 0.0706151 6.28652C0.113353 6.38013 0.174151 6.46439 0.249523 6.53446L4.13592 10.1618C4.28566 10.3014 4.48445 10.3763 4.68911 10.3703C4.89376 10.3642 5.08776 10.2776 5.22897 10.1294L13.7791 1.32021C13.8874 1.20913 13.9601 1.06815 13.9876 0.915425C14.0152 0.762701 13.9964 0.605222 13.9337 0.463263C13.871 0.321304 13.7673 0.201363 13.6358 0.118881C13.5043 0.0363997 13.3512 -0.00484612 13.1961 0.00045355Z' fill='black'/%3E%3C/svg%3E%0A");
                         }
                     }
                 }
@@ -707,13 +713,17 @@ text-align:center;
 
                     &:disabled {
                         opacity: 1;
-                        background: $color-black;
+                        background: #D6D6D6;
                         color: $color-white;
                         cursor: not-allowed;
                     }
 
                     &:hover:not(:disabled) {
                         opacity: 0.85;
+                    }
+
+                    &:focus {
+                        background: #D6D6D6;
                     }
                 }
 

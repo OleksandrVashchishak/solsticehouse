@@ -110,7 +110,6 @@ Text Domain: spinner-theme
 @media screen and (max-width: 900px) {
   .popup__contact {
     padding: 12px !important;
-    align-items: flex-start !important;
     overflow-y: auto !important;
   }
 }
@@ -118,7 +117,7 @@ Text Domain: spinner-theme
   .popup__contact-wrapper {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 36px 12px 20px !important;
+    padding: 36px 24px 20px !important;
   }
   .popup__thanks {
     padding: 36px 12px !important;
@@ -187,7 +186,7 @@ Text Domain: spinner-theme
 
   /* Get your plan — full-width inputs */
   .popup__contact.second .popup__contact-wrapper {
-    padding: 36px 12px 20px !important;
+    padding: 36px 24px 20px !important;
   }
   .popup__contact.second .popup__contact-inner {
     flex-direction: column !important;
