@@ -431,6 +431,7 @@ button {
 @media screen and (max-width: 900px) {
   .header__popup.open {
     right: 0;
+    top: -9px;
   }
 }
 .header__popup-close {
@@ -1170,6 +1171,7 @@ header.scrolled .collapse {
   background: transparent;
   text-transform: uppercase;
   min-height: 0;
+  padding-bottom: 8px;
 }
 .popup__contact:not(.second) .popup__contact-form .wpcf7 .wpcf7-form .popup__contact-input:-ms-input-placeholder, .popup__contact:not(.second) .popup__contact-form .wpcf7 .wpcf7-form input.popup__contact-input:-ms-input-placeholder, .popup__contact:not(.second) .popup__contact-form .wpcf7 .wpcf7-form textarea.popup__contact-input:-ms-input-placeholder {
   color: #b3b3b3;
@@ -1619,6 +1621,7 @@ header.scrolled .collapse {
 @media screen and (max-width: 900px) {
   .banner__logo {
     margin-bottom: 40px;
+    max-width: 260px;
   }
 }
 .banner__button {
